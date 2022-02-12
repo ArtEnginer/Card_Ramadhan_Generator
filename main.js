@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    let url = "https://artenginer.github.io/index.html";
+    let url = "https://artenginer.github.io/Card_Ramadhan_Generator/index.html";
 
     var getUrlParameter = function getUrlParameter(sParam) {
         var sPageURL = window.location.search.substring(1),
