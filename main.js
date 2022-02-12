@@ -25,9 +25,6 @@ $(document).ready(function () {
         return text;
     };
 
-
-
-
     if (getnama == null || getharapan == null) {
         $("#getnama").text("Nama");
         $("#getharapan").text("Harapan");
@@ -49,8 +46,8 @@ $(document).ready(function () {
     });
 
     $(".btn_share").click(function () {
-        var nama = $("#getnama").text();
-        var harapan = $("#getharapan").text();
+        var nama = $("#getnama").text().replace(/\s/g, '+');
+        var harapan = $("#getharapan").text().replace(/\s/g, '+');
         var text = "Ramadhan Card Generator\n" + " Nama : " + nama + "\n" + " Harapan : " + harapan;
         var url_share = url + "?nama=" + nama + "&harapan=" + harapan;
 
