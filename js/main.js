@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    
-    let url = "file:///C:/Users/Angga/Desktop/CARD-RAMDHAN-GENERATOR/index.html";
+
+    let url = "https://artenginer.github.io/Card_Ramadhan_Generator/index.html";
     var getUrlParameter = function getUrlParameter(sParam) {
         var sPageURL = window.location.search.substring(1),
             sURLVariables = sPageURL.split('&'),
