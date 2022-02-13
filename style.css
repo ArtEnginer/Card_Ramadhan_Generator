@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+
+
 .header {
     font-family: 'Amiri', serif;
     text-align: center;
@@ -109,7 +111,27 @@
 }
 
 .btn:hover {
-
     background-color: #ff0099;
+}
+.footer {
+    font-family: 'Amiri', serif;
+    text-align: center;
+    font-weight: bolder;
+    color: #ffffff;
+    background: linear-gradient(to right, #ff0099, #493240);
+    background: -moz-linear-gradient(top, #ffffff 0%, #00c9c9 100%);
+    border-radius: 10px;
+    padding: 20px;
+}
 
+.footer>p {
+    display: inline-block;
+}
+
+.footer>a {
+    display: inline-block;
+    text-transform: none;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
 }
