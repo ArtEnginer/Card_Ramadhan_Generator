@@ -113,6 +113,7 @@
 .btn:hover {
     background-color: #ff0099;
 }
+
 .maincard {
     background: linear-gradient(to right, #ff0099, #cf33ff);
     border-radius: 10px;
@@ -205,5 +206,29 @@
     text-transform: none;
     text-decoration: none;
     font-weight: bold;
+    color: #ffffff;
+}
+
+.bubble-fly {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #046e0c;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    box-shadow: 0px 0px 10px rgb(0, 60, 255);
+    z-index: 9999;
+
+}
+
+.bubble-fly:hover {
+    content: "";
+    background-color: #ff0099;
     color: #ffffff;
 }

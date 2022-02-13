@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>RAMADHAN CARD GENERATOR</title>
 </head>
@@ -36,12 +36,15 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/surah.js"></script>
+
+
 
 
     <div class="container">
 
-      
+
         <div class="row">
             <div class="col-md-12 header">
                 <div class="h-judul">
@@ -108,16 +111,61 @@
                 <br>
             </div>
         </div>
-
         <div class="row">
             <div class="col-md-12 ">
                 <br>
                 <div class="footer">
                     <p>Copyright © 2022 </p> <a href="https://mediapatner.com"> ArtEnginer</a>
                 </div>
+
             </div>
         </div>
     </div>
+
+
+
+    <button type="button" class="btn-quran bubble-fly" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <p>📖</p>
+    </button>
+
+    <!-- Button trigger modal
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+        </button> -->
+
+    <!-- Modal -->
+    <div class="modal modal-dialog-scrollable fade" id="exampleModal" data-bs-backdrop="static"
+        aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Al-Qur'an</h5>
+
+                </div>
+                <div class="modal-body">
+                    <div class="daftarsurah">
+                        <div></div>
+                    </div>
+                    <section class="jumbotron">
+                        <div class="container-fluid">
+                            <div style="text-align: center;" id="loadingview"></div>
+                        </div>
+                        <h1 class="mt-4" id="surahtitle" style="text-align: center;"></h1>
+                        <div id="surah" style="margin: 20;"></div>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
 </body>
+
+
 
 </html>
