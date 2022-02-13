@@ -77,8 +77,12 @@ $(document).ready(function () {
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 
-            $("#coutdown").text(weeks + " Weeks " + days + " Days " + hours + " Hours " + minutes + " Minutes " + seconds + " Seconds");
-
+            // $("#coutdown").text(weeks + " Weeks " + days + " Days " + hours + " Hours " + minutes + " Minutes " + seconds + " Seconds");
+            $(".weeks").text(weeks);
+            $(".days").text(days);
+            $(".hours").text(hours);
+            $(".minutes").text(minutes);
+            $(".seconds").text(seconds);
 
             // If the count down is finished, write some text 
             if (distance < 0) {

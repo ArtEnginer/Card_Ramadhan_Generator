@@ -35,71 +35,74 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-
     <script src="main.js"></script>
 
     <div class="container">
         <div class="row">
             <div class="col-md-12 header">
-                <h1>BULAH RAMADHAN 1443 H</h1>
+                <div class="h-judul">
+                    <h1 class="lafadz-Allah">اَللهُ</h1>
+                    <h1> BULAH RAMADHAN 1443 H <br><span>بسم الله الرحمن الرحيم</span></h1>
+
+                    <h1 class="lafadz-muhammad">مُحَمَّدٌ</h1>
+                </div>
                 <br>
                 <p><i>Ramadhan Card Generator</i></p>
-                <h1>بسم الله الرحمن الرحيم</h1>
-                <div id="coutdown"></div>
+
+                <div class="timer">
+                    <div class="weeks"> </div>
+                    <div class="days"></div>
+                    <div class="hours"></div>
+                    <div class="minutes"></div>
+                    <div class="seconds"></div>
+                </div>
+
                 <br>
             </div>
-            <div class="row">
-                <div class="col-12 form">
-                    <!-- form input bootstrap-->
-                    <form action="" method="get" class="formmain">
-                        <div class="backform">
-                            <div class="form-group">
-                                <label for="nama">Nama</label>
-                                <input type="text" class="form-control" id="nama" aria-describedby="emailHelp"
-                                    name="nama" placeholder="Masukkan Nama">
-                            </div>
-                            <div class="form-group">
-                                <label for="harapan">Harapan</label>
-                                <textarea class="form-control" id="harapan" rows="3" name="harapan"
-                                    placeholder="Masukkan Harapanmu" maxlength="300"></textarea>
-
-                            </div>
-                            <br>
-                            <button class="btn btn-success btn_generete">Generete</button>
+        </div>
+        <div class="row">
+            <div class="col-12 form">
+                <!-- form input bootstrap-->
+                <form action="" method="get" class="formmain">
+                    <div class="backform">
+                        <div class="form-group">
+                            <label for="nama">Nama</label>
+                            <input type="text" class="form-control" id="nama" aria-describedby="emailHelp" name="nama"
+                                placeholder="Masukkan Nama">
                         </div>
-                    </form>
-                </div>
-                <div class="col-12 ramadhancard fade">
-                    <!-- card bootstrap 5 -->
-                    <div class="card ">
-                        <div class="card-body">
-                            <!-- <h5 class="card-title">RAMADHAN CARD</h5> -->
-                            <p class="card-text">
-                            <h2 id="getnama"></h2>
-                            <p id="getharapan"></p>
+                        <div class="form-group">
+                            <label for="harapan">Harapan</label>
+                            <textarea class="form-control" id="harapan" rows="3" name="harapan"
+                                placeholder="Masukkan Harapanmu" maxlength="300"></textarea>
 
-                            </p>
                         </div>
                         <br>
+                        <button class="btn btn-success btn_generete">Generete</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 ramadhancard fade">
+                <!-- card bootstrap 5 -->
+                <div class="card ">
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">RAMADHAN CARD</h5> -->
+                        <p class="card-text">
+                        <h2 id="getnama"></h2>
+                        <p id="getharapan"></p>
 
+                        </p>
                     </div>
                     <br>
-                    <a href="#" class="btn btn-primary btn_share">SHARE</a>
 
-                    <a class="btn btn-danger btn_buat" style="display: inline-block;">Buat Sekarang ?</a>
                 </div>
+                <br>
+                <a href="#" class="btn btn-primary btn_share">SHARE</a>
+
+                <a class="btn btn-danger btn_buat" style="display: inline-block;">Buat Sekarang ?</a>
             </div>
-
-
-
-
-
-
-
+        </div>
+    </div>
 </body>
 
 </html>

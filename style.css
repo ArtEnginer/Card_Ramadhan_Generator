@@ -1,7 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .header {
     font-family: 'Amiri', serif;
     text-align: center;
     font-weight: bolder;
+    margin-top: 10px;
+}
+
+.h-judul {
+
+    font-weight: bolder;
+    background: linear-gradient(to right, #ff0099, #cf33ff);
+
+    /* width: max-content; */
+    padding: 20px;
+    /* border radius bottom right and left */
+    border-radius: 10px 10px 50px 50px;
+    color: white;
+    box-shadow: 0px 0px 10px rgb(0, 60, 255);
+    /* atrribute to align text center */
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.h-judul>h1 {
+    display: inline;
+    font-size: 3rem;
+}
+
+.h-judul>.lafadz-muhammad {
+    box-shadow: 0px 0px 10px rgb(0, 60, 255);
+    display: inline;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    border-radius: 5rem;
+    background: linear-gradient(to right, #ff0099, #cf33ff);
+    color: white;
+    text-shadow: 0px 0px 10px rgb(255, 251, 0);
+
+
+}
+
+.h-judul>.lafadz-Allah {
+    box-shadow: 0px 0px 10px rgb(0, 60, 255);
+    display: inline;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    border-radius: 5rem;
+    background: linear-gradient(to right, #ff0099, #cf33ff);
+    color: white;
+    text-shadow: 0px 0px 10px rgb(255, 251, 0);
+}
+
+
+.h-judul:hover {
+    background: linear-gradient(to bottom, #4e0632, #4c0661);
+    color: gold;
+    box-shadow: 0px 0px 10px rgb(0, 60, 255);
+}
+
+.timer>div {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #ff0099, #cf33ff);
+    color: white;
+    text-shadow: 0px 0px 10px rgb(255, 251, 0);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgb(0, 60, 255);
+    text-align: center;
 }
 
 .formmain {
