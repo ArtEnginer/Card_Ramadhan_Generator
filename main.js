@@ -46,10 +46,11 @@ $(document).ready(function () {
     });
 
     $(".btn_share").click(function () {
-        var nama = $("#getnama").text().replace(/\s/g, '+');
-        var harapan = $("#getharapan").text().replace(/\s/g, '+');
+        var nama = $("#getnama").text();
+        var harapan = $("#getharapan").text();
         var text = "Ramadhan Card Generator\n" + " Nama : " + nama + "\n" + " Harapan : " + harapan;
-        var url_share = url + "?nama=" + nama + "&harapan=" + harapan;
+        var url_share = url + "?nama=" + nama.replace(/\s/g, '+') +
+            "&harapan=" + harapan.replace(/\s/g, '+');
 
         var hashtags = "\nBuat kartu ucapan selamat ramadhan sekarang juga dan tulis harapanmu di sini ";
         var wa_url_share = "https://wa.me/?text=" + encodeURIComponent(text + "\n" + hashtags + url_share);
