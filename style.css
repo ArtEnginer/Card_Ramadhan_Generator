@@ -113,6 +113,78 @@
 .btn:hover {
     background-color: #ff0099;
 }
+.maincard {
+    background: linear-gradient(to right, #ff0099, #cf33ff);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgb(0, 60, 255);
+    margin-top: 20px;
+    color: wheat;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Amiri', serif;
+}
+
+#getnama {
+    font-family: 'Amiri', serif;
+    text-align: center;
+    font-weight: bolder;
+    color: #ffffff;
+    background: linear-gradient(to right, #ff0099, #493240);
+    background: -moz-linear-gradient(top, #ffffff 0%, #00c9c9 100%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#getnama:hover {
+    background: linear-gradient(to bottom, #4e0632, #4c0661);
+    color: gold;
+    box-shadow: 0px 0px 10px rgb(0, 60, 255);
+}
+
+#getharapan {
+    font-family: 'Amiri', serif;
+    text-align: justify;
+    font-weight: 200;
+    color: #ffffff;
+    background: linear-gradient(to left, #cf33ff, #ce037d);
+    background: -moz-linear-gradient(top, #ffffff 0%, #00c9c9 100%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#getharapan:hover {
+    background: linear-gradient(to bottom, #4e0632, #4c0661);
+    color: gold;
+    box-shadow: 0px 0px 10px rgb(0, 60, 255);
+}
+
+.btn_share {
+    background: linear-gradient(to right, #4400ff, #33beff);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0, 60, 255);
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Amiri', serif;
+    float: left;
+}
+
+.btn_buat {
+    background: linear-gradient(to right, #ff0000, #c2ff33);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0, 60, 255);
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Amiri', serif;
+    float: right;
+}
+
+
+
 .footer {
     font-family: 'Amiri', serif;
     text-align: center;
