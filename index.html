@@ -38,6 +38,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/surah.js"></script>
+    <script src="js/jadwal.js"></script>
 
 
 
@@ -122,10 +123,22 @@
 
 
 
-    <button type="button" class="btn-quran bubble-fly" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        <p>📖</p>
-        <!-- auto message alert -->
-    </button>
+    <nav class="navbar fixed-bottom navbar-light">
+        <div class="container menu">
+            <button type="button" class="btn btn-jadwal bubble-fly">
+                <p>📑<br><span>Jadwal Buka/Imsak</span></p>
+            </button>
+            <button type="button" class="btn btn-harapan bubble-fly">
+                <p>📝<br><span>Card</span></p>
+            </button>
+
+            <button type="button" class="btn btn-quran bubble-fly" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                <p>📖<br><span>Al-Qur'an</span></p>
+                <!-- auto message alert -->
+            </button>
+        </div>
+    </nav>
 
     <!-- Button trigger modal
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">

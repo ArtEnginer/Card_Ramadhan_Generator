@@ -12,7 +12,7 @@ $(document).ready(function () {
                 //  crete element using class
                 var element = document.createElement('li');
                 element.className = 'surah list-group-item list-group-horizontal list-group-item-action list-group-item-dark text-center';
-                element.style = "font-size:12px;font-weight:bold; margin-right:1rem; border-radius:30px;background-color:#f5f5f5;color:#000;padding:0.5rem;";
+               
                 element.innerHTML = '<a onclick="getSurat(\'' + json.data[i].id + '\', \'' + json.data[i].surat_name.replace(/[^\w\s]/gi, '') + '\')">' + json.data[i].id + '. Surat ' + json.data[i].surat_name + '</a>';
                 daftarsurah.appendChild(element);
             }

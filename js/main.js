@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    let url = "https://artenginer.github.io/Card_Ramadhan_Generator/index.html";
+    let url = "https://artenginer.github.io/Card_Ramadhan_Generator/";
     var getUrlParameter = function getUrlParameter(sParam) {
         var sPageURL = window.location.search.substring(1),
             sURLVariables = sPageURL.split('&'),
@@ -40,6 +40,10 @@ $(document).ready(function () {
         $('.form').hide();
 
     }
+
+    $(".btn-harapan").click(function () {
+        location.href = url;
+    });
 
     $('.btn_buat').click(function () {
         location.href = url;

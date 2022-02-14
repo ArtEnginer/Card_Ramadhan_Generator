@@ -213,10 +213,12 @@
 
 }
 
+
+
 .cardsurah {
     background: linear-gradient(to right, #ff0099, #cf33ff);
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0px 0px 10px rgb(0, 60, 255);
     margin-top: 20px;
     color: wheat;
@@ -236,6 +238,24 @@
     padding: 20px;
 }
 
+.surah {
+    font-family: 'Amiri', serif;
+    text-align: center;
+    font-weight: bolder;
+    color: #ffffff;
+    background: linear-gradient(to right, #ffee00, #9fa100);
+    /* background: -moz-linear-gradient(top, #ffffff 0%, #00c9c9 100%); */
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px;
+    margin-right: 1rem;
+}
+
+.arabic:hover {
+    background: linear-gradient(to bottom, #4e0632, #4c0661);
+    color: gold;
+    box-shadow: 0px 0px 10px rgb(0, 60, 255);
+}
+
 .terjemah {
     font-family: 'Amiri', serif;
     text-align: justify;
@@ -248,30 +268,41 @@
     padding: 20px;
 }
 
-.bubble-fly {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    background-color: #046e0c;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    color: #ffffff;
-    font-size: 1.5rem;
-    font-weight: bolder;
+.navbar {
+    background: linear-gradient(to right, #ff0099, #cf33ff);
+    border-radius: 10px;
     box-shadow: 0px 0px 10px rgb(0, 60, 255);
-    z-index: 9999;
+    margin-top: 20px;
+    color: wheat;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Amiri', serif;
 
 }
 
+.container .menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bubble-fly {
+    padding: 2px;
+}
 
 
 .bubble-fly:hover {
     content: "";
     background-color: #ff0099;
     color: #ffffff;
+}
+
+.bubble-fly::after {
+    content: "";
+    position: absolute;
+    background-color: #ff0099;
+    border-radius: 50%;
+    box-shadow: 0 0 3px #ff0099;
+    animation: bubble-fly 1s linear infinite;
 }
 
 .backtotop {
