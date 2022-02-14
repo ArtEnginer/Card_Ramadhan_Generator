@@ -57,6 +57,15 @@ $(document).ready(function () {
         window.open(wa_url_share, '_blank');
     });
 
+    // modal-dialog-scrollable to top
+
+
+    $(".backtotop").click(function () {
+        $('.modal-dialog-scrollable').animate({
+            scrollTop: 0
+        }, 500);
+    });
+
     function countdown_date() {
         // Set the date we're counting down to
         var countDownDate = new Date("April 3, 2022 00:00:00").getTime();

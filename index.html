@@ -124,6 +124,7 @@
 
     <button type="button" class="btn-quran bubble-fly" data-bs-toggle="modal" data-bs-target="#exampleModal">
         <p>📖</p>
+        <!-- auto message alert -->
     </button>
 
     <!-- Button trigger modal
@@ -142,17 +143,23 @@
                 </div>
                 <div class="modal-body">
                     <div class="daftarsurah">
-                        <div></div>
+                        <ul class="list-group list-group-horizontal listsuraah">
+                        </ul>
                     </div>
+
+                </div>
+                <div class="modal-footer">
                     <section class="jumbotron">
                         <div class="container-fluid">
                             <div style="text-align: center;" id="loadingview"></div>
                         </div>
                         <h1 class="mt-4" id="surahtitle" style="text-align: center;"></h1>
-                        <div id="surah" style="margin: 20;"></div>
+                        <div id="surah" style="margin: 20;">
+
+                        </div>
                     </section>
-                </div>
-                <div class="modal-footer">
+                    <br>
+                    <div class="backtotop">Top</div>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
