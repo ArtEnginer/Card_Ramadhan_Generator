@@ -110,48 +110,55 @@
                 <br>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 ">
-                <br>
-                <div class="footer">
-                    <p>Copyright © 2022 </p> <a href="https://artenginer.github.io/"> Anggaegae</a>
-                </div>
 
-            </div>
-        </div>
     </div>
 
 
 
     <nav class="navbar fixed-bottom navbar-light">
         <div class="container menu">
-            <button type="button" class="btn btn-jadwal bubble-fly">
-                <p>📑<br><span>Jadwal Buka/Imsak</span></p>
+            <button type="button" class="btn btn-jadwal bubble-fly" data-bs-toggle="modal"
+                data-bs-target="#ModalJadwal">
+                <p>📑<br>
+                    <!-- <span>Jadwal Buka/Imsak</span> -->
+                </p>
             </button>
             <button type="button" class="btn btn-harapan bubble-fly">
-                <p>📝<br><span>Card</span></p>
+                <p>📝<br>
+                    <!-- <span>Card</span> -->
+                </p>
             </button>
 
-            <button type="button" class="btn btn-quran bubble-fly" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">
-                <p>📖<br><span>Al-Qur'an</span></p>
+            <button type="button" class="btn btn-quran bubble-fly" data-bs-toggle="modal" data-bs-target="#ModalQuran">
+                <p>📖<br>
+                    <!-- <span>Al-Qur'an</span> -->
+                </p>
                 <!-- auto message alert -->
             </button>
+            <button type="button" class="btn btn-notif bubble-fly" data-bs-toggle="modal"
+                data-bs-target="#ModalNotifikasi">
+                <p>🔔</p>
+            </button>
         </div>
+        <!-- <div class="footer">
+            <p>Copyright © 2022 </p> <a href="https://artenginer.github.io/"> <strong>Anggaegae</strong></a>
+        </div> -->
     </nav>
 
     <!-- Button trigger modal
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Quran">
             Launch demo modal
         </button> -->
 
-    <!-- Modal -->
-    <div class="modal modal-dialog-scrollable fade" id="exampleModal" data-bs-backdrop="static"
-        aria-labelledby="exampleModalLabel">
+
+
+    <!-- Modal Quran-->
+    <div class="modal modal-dialog-scrollable fade" id="ModalQuran" data-bs-backdrop="static"
+        aria-labelledby="QuranLabel">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Al-Qur'an (Beta)</h5>
+                    <h5 class="modal-title" id="QuranLabel">Al-Qur'an (Beta)</h5>
 
                 </div>
                 <div class="modal-body">
@@ -171,6 +178,55 @@
 
                         </div>
                     </section>
+                    <br>
+                    <div class="backtotop">Top</div>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Jadwal -->
+    <div class="modal modal-dialog-scrollable fade" id="ModalJadwal" data-bs-backdrop="static"
+        aria-labelledby="JadwalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="JadwalLabel">Jadwal Buka/Imsak Ramadhan (Beta)</h5>
+                </div>
+                <div class="modal-body">
+                    <h2>Jadwal Belum ada</h2>
+                </div>
+                <div class="modal-footer">
+                    <br>
+                    <div class="backtotop">Top</div>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Notifikasi -->
+    <div class="modal modal-dialog-scrollable fade" id="ModalNotifikasi" data-bs-backdrop="static"
+        aria-labelledby="NotifikasiLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="NotifikasiLabel">Notifikasi & About (Beta)</h5>
+                </div>
+                <div class="modal-body">
+                    <h1>Dapatkan Pemberitahuan Jadwal Bulan Ramadhan 1443H</h1> <br>
+                    <h2>Cara Penggunaan Aplikasi</h2>
+                    <ol>
+                        <li>null</li>
+                        <li>null</li>
+                    </ol>
+                    <h2>About</h2>
+                    <p>Aplikasi dibangun dengan Client Server Javascript Kunjungi Beranda saya bila ada keluhan <strong>
+                            <a href="https://artenginer.github.io">Anggaegae</a>
+                        </strong></p>
+                </div>
+                <div class="modal-footer">
                     <br>
                     <div class="backtotop">Top</div>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
