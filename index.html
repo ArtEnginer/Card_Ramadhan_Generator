@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/todo.css">
 
     <title>RAMADHAN CARD GENERATOR</title>
 </head>
@@ -40,6 +41,7 @@
     <script src="js/main.js"></script>
     <script src="js/surah.js"></script>
     <script src="js/jadwal.js"></script>
+    <script src="js/todo.js"></script>
 
 
 
@@ -49,7 +51,7 @@
             <div class="col-md-12 header">
                 <div class="h-judul">
                     <h1 class="lafadz-Allah">اَللهُ</h1>
-                    <h1> BULAH RAMADHAN 1443 H <br><span style="font-size:medium;">بسم الله الرحمن
+                    <h1> BULAN RAMADHAN 1443 H <br><span style="font-size:medium;">بسم الله الرحمن
                             الرحيم</span></h1>
 
                     <h1 class="lafadz-muhammad">مُحَمَّدٌ</h1>
@@ -129,6 +131,13 @@
                 </p>
             </button>
 
+            <button type="button" class="btn btn-Catatan bubble-fly" data-bs-toggle="modal"
+                data-bs-target="#ModalCatatan">
+                <p>📓<br>
+                    <span>Catatan</span>
+                </p>
+            </button>
+
             <button type="button" class="btn btn-quran bubble-fly" data-bs-toggle="modal" data-bs-target="#ModalQuran">
                 <p>📖<br>
                     <span>Qur'an</span>
@@ -203,6 +212,42 @@
         </div>
     </div>
 
+    <!-- Modal Catatan -->
+    <div class="modal modal-dialog-scrollable fade" id="ModalCatatan" data-bs-backdrop="static"
+        aria-labelledby="CatatanLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="CatatanLabel">Catatan Ramadhan (Beta)</h5>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                        data-bs-target="#ModalNotifikasi">👁‍🗨</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h2 class="text-center">Catatan Harian Ramadhan</h2>
+
+                        <div class="form-group">
+                            <label for="itemInput">Catatan</label>
+                            <input type="text" class="form-control" name="" id="itemInput"
+                                placeholder="Tulis catatan harianmu" required autofocus>
+                            <br>
+                        </div>
+                        <button id="addButton" class="btn btn-primary">➕</button>
+                        <button id="clearButton" class="btn btn-danger">🧹</button>
+                        <h3>Catatan Ramadhan</h3>
+                        <ul id="todoList"></ul>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <br>
+                    <div class="backtotop">Top</div>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Modal Notifikasi -->
     <div class="modal modal-dialog-scrollable fade" id="ModalNotifikasi" data-bs-backdrop="static"
         aria-labelledby="NotifikasiLabel">
@@ -215,8 +260,24 @@
                     <h1>Dapatkan Pemberitahuan Jadwal Bulan Ramadhan 1443H</h1> <br>
                     <h2>Cara Penggunaan Aplikasi</h2>
                     <ol>
-                        <li>null</li>
-                        <li>null</li>
+                        <li><strong>Jadwal Maghrib/Imsak</strong></li>
+                        <br>
+                        <p>Jadwal akan tersedia disini dan dan dapatkan notifikasi di hpmu dengan mengaktifkan Notic</p>
+                        <li><strong>Kartu</strong></li>
+                        <br>
+                        <p>Gunakan Fitur ini untuk membuat Kartu Ucapan Ramdhan dan dapatkan feedback dari orang lain
+                        </p>
+                        <li><Strong>Catatan Ramadhan</Strong></li>
+                        <br>
+                        <p>Gunakan aplikasi ini untuk mencatat kegiatan ramadhanmu dan akan tersimpan Local Storage Web
+                            Browsermu aplikasi ini bisa di jalankan secara offline tanpa harus online, jadi jangan Clear
+                            chache dan Data Pada Browsermu jika hal ini dilakukan maka
+                            seluruh data yang diinputkan akan secara otomatis terhapus.</p>
+                        <li><strong>Al-Qur'an</strong></li>
+                        <br>
+                        <p>Fitur ini adalah fitur E-Al Qur'an yang digunakan untuk membaca Al-Quran secara Online. Di
+                            ambil dari API <a href="https://quran.kemenag.go.id/api/v1/">Al-Quran-JSON-Indonesia-Kemenag
+                            </a></p>
                     </ol>
                     <h2>About</h2>
                     <p>Aplikasi dibangun dengan Client Server Javascript Kunjungi Beranda saya bila ada keluhan <strong>
@@ -225,7 +286,7 @@
                 </div>
                 <div class="modal-footer">
                     <br>
-                    <div class="backtotop">Top</div>
+                    <div class="backtotop fade">Top</div>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>

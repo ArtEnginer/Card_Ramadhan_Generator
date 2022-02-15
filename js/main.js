@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    let url = "https://artenginer.github.io/Card_Ramadhan_Generator/";
+    let url = "https://artenginer.github.io/Card_Ramadhan_Generator/index.html";
     var getUrlParameter = function getUrlParameter(sParam) {
         var sPageURL = window.location.search.substring(1),
             sURLVariables = sPageURL.split('&'),
@@ -61,7 +61,6 @@ $(document).ready(function () {
         window.open(wa_url_share, '_blank');
     });
 
-    // modal-dialog-scrollable to top
 
 
     $(".backtotop").click(function () {
