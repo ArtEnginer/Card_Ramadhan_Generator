@@ -41,7 +41,6 @@
     <script src="js/main.js"></script>
     <script src="js/surah.js"></script>
     <script src="js/jadwal.js"></script>
-    <script src="js/todo.js"></script>
 
 
 
@@ -131,12 +130,12 @@
                 </p>
             </button>
 
-            <button type="button" class="btn btn-Catatan bubble-fly" data-bs-toggle="modal"
-                data-bs-target="#ModalCatatan">
-                <p>📓<br>
-                    <span>Catatan</span>
-                </p>
-            </button>
+            <a href="catatan.html"> <button type="button" class="btn bubble-fly">
+                    <p>📓<br>
+                        <span>Catatan</span>
+                    </p>
+                </button>
+            </a>
 
             <button type="button" class="btn btn-quran bubble-fly" data-bs-toggle="modal" data-bs-target="#ModalQuran">
                 <p>📖<br>
@@ -223,29 +222,17 @@
                         data-bs-target="#ModalNotifikasi">👁‍🗨</button>
                 </div>
                 <div class="modal-body">
-                    <div class="container">
-                        <h2 class="text-center">Catatan Harian Ramadhan</h2>
 
-                        <div class="form-group">
-                            <label for="itemInput">Catatan</label>
-                            <input type="text" class="form-control" name="" id="itemInput"
-                                placeholder="Tulis catatan harianmu" required autofocus>
-                            <br>
-                        </div>
-                        <button id="addButton" class="btn btn-primary">➕</button>
-                        <button id="clearButton" class="btn btn-danger">🧹</button>
-                        <h3>Catatan Ramadhan</h3>
-                        <ul id="todoList"></ul>
 
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <br>
-                    <div class="backtotop">Top</div>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
+            <div class="modal-footer">
+                <br>
+                <div class="backtotop">Top</div>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
         </div>
+    </div>
     </div>
 
     <!-- Modal Notifikasi -->
