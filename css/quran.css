@@ -32,17 +32,17 @@
     padding: 20px;
 }
 
-.surah {
+/* .surah {
     font-family: 'Amiri', serif;
     text-align: center;
     font-weight: bolder;
     color: #ffffff;
     background: linear-gradient(to right, #ffee00, #9fa100);
-    /* background: -moz-linear-gradient(top, #ffffff 0%, #00c9c9 100%); */
+    background: -moz-linear-gradient(top, #ffffff 0%, #00c9c9 100%);
     border-radius: 0px 0px 20px 20px;
     padding: 10px;
     margin-right: 1rem;
-}
+} */
 
 .arabic:hover {
     background: linear-gradient(to bottom, #4e0632, #4c0661);

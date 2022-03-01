@@ -13,10 +13,10 @@ $(document).ready(function () {
             for (var i = 0; i < json.data.length; i++) {
                 //  crete element using class
                 var element = document.createElement('li');
-                element.className = 'surah list-group-item list-group-horizontal list-group-item-action list-group-item-dark text-center';
+                element.className = 'surah dropdown-item ';
                 element.style.fontSize = '12px';
 
-                element.innerHTML = '<a onclick="getSurat(\'' + json.data[i].id + '\', \'' + json.data[i].surat_name.replace(/[^\w\s]/gi, '') + '\')">' + json.data[i].id + '. Surat ' + json.data[i].surat_name + '</a>';
+                element.innerHTML = '<a onclick="getSurat(\'' + json.data[i].id + '\', \'' + json.data[i].surat_name.replace(/[^\w\s]/gi, '') + '\')">' + json.data[i].id + '. Surat ' + json.data[i].surat_name + ' <span class="badge bg-primary rounded-pill">' + json.data[i].count_ayat + '</span> </a>';
 
                 daftarsurah.appendChild(element);
             }
@@ -56,7 +56,15 @@ function getSurat(id, title) {
     isLoading.innerHTML = '<div class="spinner-border text-primary" role="status">'
     document.getElementById("surahtitle").innerHTML = title;
     var url = 'https://raw.githubusercontent.com/ArtEnginer/Audio/master/'
-    document.getElementById("audio").src = url + id + '.mp3';
+    var audio = document.getElementById("audio");
+    audio.src = url + id + '.mp3';
+
+    // if audio is not found then show error
+    audio.onerror = function () {
+        var alertaudio = document.getElementsByClassName('alertaudio')[0];
+        alertaudio.innerHTML = '<div class="alert alert-danger alert-dismissible fade show" role="alert">Audio tidak ditemukan!  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> </div>';
+
+    }
 
     var mainContainer = document.getElementById("surah");
     mainContainer.innerHTML = '';
@@ -67,8 +75,6 @@ function getSurat(id, title) {
         })
         .then(function (data) {
             for (var i = 0; i < data.data.length; i++) {
-
-
                 var div = document.createElement("div");
                 div.className = "card text-center cardsurah";
                 div.innerHTML = '<p class="arabic pull-right"><span class="badge badge-primary aya_number">' + data.data[i].aya_number + '</span> ' + data.data[i].aya_text + '</p><div class="clearfix"></div><p class="terjemah">' + data.data[i].translation_aya_text + '</p>';

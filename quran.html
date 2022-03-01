@@ -22,6 +22,9 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>
@@ -39,18 +42,59 @@
     <script src="js/quran.js"></script>
 
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Al-Quran</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cara Penggunaan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tentang</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
     <div class="container">
 
 
-        <form class="d-flex">
+
+        <!-- <form class="d-flex">
             <input class="form-control me-2" id="myInput" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success btn-carisurah" onclick=carisurah()>Search</button>
-        </form>
+        </form> -->
         <br>
-        <div class="daftarsurah">
-            <ul class="list-group list-group-horizontal listsuraah">
+
+        <div class="dropdown text-center">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Cari Surah
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <ul class="list-group listsuraah">
+                    <div class="daftarsurah">
+                    </div>
+                </ul>
             </ul>
         </div>
+
+
+
 
 
         <section class="jumbotron">
@@ -63,6 +107,9 @@
                     <source type="audio/mp3/mpeg">
                 </audio>
             </div>
+            <div>
+                <p class="alertaudio"></p>
+            </div>
 
             <div id="surah" style="margin: 20;">
 
@@ -71,6 +118,7 @@
 
 
     </div>
+
 
 
 </body>
